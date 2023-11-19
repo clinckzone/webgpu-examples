@@ -8,9 +8,9 @@ app.use('/dist', express.static(path.join(__dirname, 'dist')));
 app.use('/shaders', express.static(path.join(__dirname, 'shaders')));
 
 app.get('/', (req, res) => {
-	return res.sendFile(path.join(__dirname, 'index.html'));
+  return res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(port, () => {
-	console.log(`Server listening at http://localhost:${port}`);
+  console.log(`Server listening at http://localhost:${port}`);
 });
